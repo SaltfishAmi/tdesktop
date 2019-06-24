@@ -239,7 +239,7 @@ SessionsBox::Entry SessionsBox::ParseEntry(const MTPDauthorization &data) {
 			&& lastDate.weekNumber() == nowDate.weekNumber()) {
 			result.active = langDayOfWeek(lastDate);
 		} else {
-			result.active = lastDate.toString(qsl("d.MM.yy"));
+			result.active = lastDate.toString(qsl("yy M/dd"));
 		}
 		result.activeWidth = st::sessionWhenFont->width(result.active);
 	}
