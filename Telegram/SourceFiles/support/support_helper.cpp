@@ -131,7 +131,7 @@ QString FormatDateTime(TimeId value) {
 	} else {
 		return lng_mediaview_date_time(
 			lt_date,
-			date.date().toString(qsl("dd.MM.yy")),
+			date.date().toString(qsl("yy M/dd")),
 			lt_time,
 			date.time().toString(cTimeFormat()));
 	}
